@@ -1,0 +1,51 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://aws-0-ap-southeast-1.pooler.supabase.com:5432/postgres
+    username: postgres.gxdkqmycsyyxcoobdsfs
+    password: thaidang999123
+  devtools:
+    restart:
+      poll-interval: 1s
+
+
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    properties:
+      hibernate:
+      hbm2ddl:
+      auto: update
+    hibernate:
+      ddl-auto: none
+server:
+  port: 8080
+# Mail
+mailServer:
+  host: smtp.gmail.com
+  port: 587
+  email: hoangtuananh1772003@gmail.com
+  password: vligdsqcyeaqlcex
+  protocol: smtp
+  isSSL: false
+
+# Swagger3
+config:
+  openapi:
+    dev-url: http://localhost:8080
+    prod-url: https://edu-api.com
+
+springdoc:
+  swagger-ui:
+    path: /edu-documentation
+    tryItOutEnabled: true
+    operationsSorter: method
+    tagsSorter: alpha
+    filter: true
+  api-docs:
+    path: /edu-api-docs
+  packages-to-scan: com.huce.edu.controllers
+
+
+
+
