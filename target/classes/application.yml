@@ -1,9 +1,9 @@
 spring:
   datasource:
-    driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://aws-0-ap-southeast-1.pooler.supabase.com:5432/postgres
-    username: postgres.gxdkqmycsyyxcoobdsfs
-    password: thaidang999123
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://gateway01.ap-southeast-1.prod.aws.tidbcloud.com:4000/DBEDU?characterEncoding=UTF-8
+    username: 2dtqcVndnd7TjDr.root
+    password: 0Zda9q2D7KKAdnTV
   devtools:
     restart:
       poll-interval: 1s
